@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --no-source-maps --public-url ./",
+    "deploy": "rm -rf dist && npm run build && gh-pages -d dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.2.0",
+    "parcel-bundler": "^1.9.7"
+  },
+  "dependencies": {
+    "roughjs": "^2.2.5"
+  }
+}
